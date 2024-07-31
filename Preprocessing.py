@@ -1,7 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-
+""" 
+Filling missing values with interpolation.
+Filtering the data to remove noise.
+Removing outliers based on a threshold.
+Saving the cleaned and filtered data for further analysis.
+"""    
 """import libraries"""
 import numpy as np
 import os
