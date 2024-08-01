@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #Read file
-DF_DLC_100 = pd.read_pickle(r'C:\Users\KIMOCO\Desktop\Esperimenti_ValidazioneDLCOP\Test\Results_preprocessing\DLCT_100.pkl')
+DF_DLC_100 = pd.read_pickle('Your_Path/DLCT_100.pkl')
 F=sorted(DF_DLC_100)
 set_fps_cam = 25
 
