@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+"""
+Crop the video using the spatial coordinates of the platform and create time interval labels. 
+Then, filter the time intervals based on these spatial coordinates.
+Calculate the velocity and acceleration of the heel and toe markers for both the right and left sides.
+Establish thresholds to identify heel strike and toe-off events based on the velocity of the heel and toe markers.
+Calculate Gait Parameters:
+- Step Length: Compute the step length as the absolute difference between the right and left heel positions during heel strike events.
+- Step Time: Calculate the time between consecutive heel strike events divided by the camera frame rate (set_fps_cam).
+- Stance Time: Determine the stance time as the difference between toe-off and heel strike events for each step.
+- Double Stance Time: Calculate the double stance time as the overlap between the stance phases of consecutive steps.
+- Cadence: Determine the cadence as the number of steps per minute.
+"""
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
