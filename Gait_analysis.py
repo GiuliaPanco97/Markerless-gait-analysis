@@ -265,7 +265,7 @@ for i in range(len(F)):
   
   """ definizone parametri del cammino"""
   #Gait length (cm)
-  Gait_length = step / prop_cost #via proportion way
+  Gait_length = step / prop_cost
   
 #   #Gait speed (m/s)
   Gait_speed = Gait_length/Step_time
