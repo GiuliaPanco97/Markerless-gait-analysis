@@ -285,8 +285,9 @@ for i in range(len(F)):
 #export to excel
 df = pd.DataFrame()
 df = pd.DataFrame(struct_list)
-writer = pd.ExcelWriter(r"C:/Users/KIMOCO/Desktop/Esperimenti_ValidazioneDLCOP/Test/Results_gait_analysis/DataGaitDLCT100.xlsx", engine='xlsxwriter')
+writer = pd.ExcelWriter("Your_Path/DataGaitDLCT100.xlsx", engine='xlsxwriter')
 df.to_excel(writer,  index=False)
 writer.save()
-df.to_pickle(r"C:/Users/KIMOCO/Desktop/Esperimenti_ValidazioneDLCOP/Test/Results_gait_analysis/DataGaitDLCT100.pkl")
+
+df.to_pickle("Your_Path/DataGaitDLCT100.pkl")
 
